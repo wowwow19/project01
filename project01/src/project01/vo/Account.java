@@ -26,7 +26,7 @@ public class Account implements Serializable {
 	static {
 		try {
 			DataInputStream dis = new DataInputStream(new FileInputStream("memNum.ser"));
-			memNum = dis.readInt();	
+			memNum = dis.readInt();
 			dis.close();
 		} catch(IOException e) {
 			e.printStackTrace();
